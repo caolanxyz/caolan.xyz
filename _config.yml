@@ -13,8 +13,11 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Caolan McKendry # author name
   bio: >- # tell to the world
-    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog, 
-    meet Klisé theme at <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
+    QUB Computer Science Student
+    STEM Ambassador
+    Trustee @ <a href="http://niraspberryjam.com/" target="_blank" rel="noopener">NI Raspberry Jam</a>
+    Torment @  <a href="https://discord.gg/whitepot" target="_blank" rel="noopener">Whitepot Studios Community</a>
+    among <a href="https://caolan.xyz/about" target="_blank" rel="noopener">other things</a>
   username: caolanxyz # general username
   github: caolanxyz # github username
   twitter: caolanxyz # twitter username
