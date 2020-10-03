@@ -13,11 +13,11 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Caolan McKendry # author name
   bio: >- # tell to the world
-    QUB Computer Science Student <br>
-    STEM Ambassador <br>
-    Trustee @ <a href="http://niraspberryjam.com/" target="_blank" rel="noopener">NI Raspberry Jam</a> <br>
-    Torment @  <a href="https://discord.gg/whitepot" target="_blank" rel="noopener">Whitepot Studios Community</a> <br>
-    among <a href="https://caolan.xyz/about" target="_blank" rel="noopener">other things</a>.
+    • QUB Computer Science Student <br>
+    • STEM Ambassador <br>
+    • Trustee @ <a href="http://niraspberryjam.com/" target="_blank" rel="noopener">NI Raspberry Jam</a> <br>
+    • Torment @  <a href="https://discord.gg/whitepot" target="_blank" rel="noopener">Whitepot Studios Community</a> <br>
+    • among <a href="https://caolan.xyz/about" target="_blank" rel="noopener">other things</a>.
   username: caolanxyz # general username
   github: caolanxyz # github username
   twitter: caolanxyz # twitter username
