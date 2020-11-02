@@ -1,91 +1,66 @@
-# Site settings
-title: Caolan McKendry # site title
-description: >- # site description
-  He's writing in Bahasa about web technology and experience as a journal 
-  for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
-lang: en-US # default lang
-timezone: Europe/London # set your timezone
-image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/caolanxyz/caolan.xyz # site repo [optional]
-mode: dark # default theme "dark" | "light"
+title: Caolan McKendry
+logo:  # you can add own logo.
+description: Computer Science Student, STEM Ambassador, and Trustee at the NI Raspberry Jam, among other things.
+baseurl: "/caolan" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Profile settings
+
+# Author Settings
 author:
-  name: Caolan McKendry # author name
-  bio: >- # tell to the world
-    Computer Science Student, STEM Ambassador, and Trustee at <a href="http://niraspberryjam.com/" target="_blank" rel="noopener">NI Raspberry Jam</a>, among <a href="https://caolan.xyz/about" target="_blank" rel="noopener">other things</a>.
-  username: caolanxyz # general username
-  github: caolanxyz # github username
-  twitter: caolanxyz # twitter username
-  facebook: caolanxyz # facebook username
-  email: hi@caolan.xyz # email adress
-  avatar: /assets/img/avatar.jpg # change with your own avatar
+  name: Caolan McKendry
+  image: '/assets/img/01.jpg'
+  job: Caolan McKendry
+  bio: Computer Science Student, STEM Ambassador, and Trustee at <a href="http://niraspberryjam.com/" target="_blank" rel="noopener">NI Raspberry Jam</a>, among <a href="https://caolan.xyz/about" target="_blank" rel="noopener">other things</a>.
+  email: forexample@website.com
 
-# URL settings
-url: "https://caolan.xyz" #
-baseurl:
-permalink: /:title/
-google_analytics: # leave it blank if not wish
-fb_appid:
 
-# Collection setting
-collections:
-  posts:
-    output: true
+# Contact links
+contact:
+  - name: Twitter
+    link: https://twitter.com/caolanxyz
+  - name: Facebook
+    link: https://facebook.com/caolanxyz
+  - name: Instagram
+    link: https://instagram.com/caolanxyz
 
-# Markdown settings
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  syntax_highlighter: rouge
 
-# Default front matter
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: post
-      comments: false
+# Comment Section (Disqus)
+disqus-identifier: caolanxyz # add your shortname for Disqus Comment. For example mr-brown
 
-# Jekyll Compose default front matter
-jekyll_compose:
-  post_default_front_matter:
-    modified:
-    tags: []
-    description:
-  draft_default_front_matter:
-    modified:
-    tags: []
-    description:
 
-# Homepage limit posts
-number_of_posts: 5
+# Google Analytics
+google-analytics: # add your identifier. For example UA-99631805-1.
+
 
 # Build settings
-# theme: klise
-sass:
-  style: compressed
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll/tagging
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
 
 include:
-  - _redirects
-  - .htaccess
+  - _pages
 
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag-page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Exclude from processing.
 exclude:
-  - CNAME
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - CHANGELOG.md
-  - README.md
-  - node_modules
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - lighthouse.png
-  - klise-*.gem
-  - klise.gemspec
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-postfiles
+  - vendor
